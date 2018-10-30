@@ -13,11 +13,14 @@ body {
   grid-column: 2;
   grid-row: 2;
   display: grid;
-  grid-template-rows: 2fr 4fr 0.5fr;
+  grid-template-rows: 200px 4fr 0.5fr;
 }
 /* ------------------------------- VCard Header*/
 .header {
   grid-row: 1;
+  height: 200px;
+  margin: 0px;
+  padding: 0px;
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 1fr;
@@ -105,14 +108,14 @@ body {
 .content {
   grid-row: 2;
   display: grid;
-  grid-template-rows: 4fr 6fr 1fr;
+  grid-template-rows: 4fr 6fr;
 }
 /* -------------------------------------------------------------------------------- Message*/
 .message {
   grid-row: 1;
   background-color: rgba(255,255,255,1);
   margin: 0px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .message h1 {
   font-family: 'Montserrat', sans-serif;
@@ -129,15 +132,88 @@ body {
 /* -------------------------------------------------------------------------------- Resume*/
 .resume {
   grid-row: 2;
-  background-color: rgba(255,255,255,0.5);
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-/* -------------------------------------------------------------------------------- Content Bottom strip*/
-.content_bottom {
-  grid-row: 3;
-  background-color: rgba(255,255,255,1);
+.resume img {
+  height: 150px;
+  width: auto;
+}
+.resume a {
+  text-decoration: none;
+}
+.skills {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.5);
+}
+.skills:hover {
+  background-color: rgba(255,255,255,0);
+}
+.skills p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+}
+.skills h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+}
+.work {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.5);
+}
+.work:hover {
+  background-color: rgba(255,255,255,0);
+}
+.work p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+}
+.work h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+}
+.education {
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.5);
+}
+.education:hover {
+  background-color: rgba(255,255,255,0);
+}
+.education p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+}
+.education h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 /* ------------------------------- VCard Bottom*/
 .bottom {
