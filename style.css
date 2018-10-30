@@ -1,0 +1,147 @@
+body {
+  background-image: linear-gradient(#e66465, #9198e5);
+  background-repeat: no-repeat;
+}
+/* ------------------------------- Main Grid*/
+.main {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 6fr 2fr;
+}
+/* ------------------------------- VCard Grid*/
+.container {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 2fr 4fr 0.5fr;
+}
+/* ------------------------------- VCard Header*/
+.header {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr;
+}
+/* -------------------------------------------------------------------------------- Picture*/
+.picture {
+  grid-row: 1 / 3;
+  grid-column: 1;
+  height: 200px;
+  background-image: url(avatar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* -------------------------------------------------------------------------------- Name & Occupation*/
+.header_top {
+  grid-row: 1;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 290px 1fr;
+}
+.name {
+  grid-column: 1;
+  background-color: rgba(255,255,255,1)
+}
+.name h1 {
+  padding-left: 20px;
+  padding-top: 30px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.occupation {
+  grid-column: 2;
+  background-color: rgba(255,255,255,0.5);
+}
+.occupation h2 {
+  padding-left: 70px;
+  padding-top: 39px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+/* -------------------------------------------------------------------------------- Social Media*/
+.header_down {
+  grid-row: 2;
+  grid-column: 2;
+  border-right: rgba(255,255,255,0.5);
+  border-width: 25px;
+  border-right-style: inset;
+}
+.social_media ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+  height: 100px;
+  list-style: none;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.social_media li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.social_media img {
+  height: 75px;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+}
+.social_media li:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+#Linkedin:hover {
+  background-color: rgba(255,255,255,1);
+}
+#Github:hover {
+  background-color: rgba(255,255,255,1);
+}
+/* ------------------------------- VCard Content*/
+.content {
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 4fr 6fr 1fr;
+}
+/* -------------------------------------------------------------------------------- Message*/
+.message {
+  grid-row: 1;
+  background-color: rgba(255,255,255,1);
+  margin: 0px;
+  padding-top: 10px;
+}
+.message h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  margin: 0px;
+  padding-left: 10px;
+}
+.message p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  margin: 0px;
+  padding-left: 10px;
+}
+/* -------------------------------------------------------------------------------- Resume*/
+.resume {
+  grid-row: 2;
+  background-color: rgba(255,255,255,0.5);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* -------------------------------------------------------------------------------- Content Bottom strip*/
+.content_bottom {
+  grid-row: 3;
+  background-color: rgba(255,255,255,1);
+}
+/* ------------------------------- VCard Bottom*/
+.bottom {
+  grid-row: 3;
+  background-color: rgba(226, 103, 108, 1);
+  height: inherit;
+}
